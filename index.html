@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Favorite Films</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <h1>Enter Favorite Film</h1>
+    <form class="form">
+      <div class="form-wrapper">
+        <div class="form-item">
+          <label for="title">Title:</label>
+          <input type="text" id="title" required>
+        </div>
+        <div class="form-item">
+          <label for="director">Director:</label>
+          <input type="text" id="director">
+        </div>
+        <div class="form-item">
+          <label for="actors">Main Actors:</label>
+          <input type="text" id="actors">
+        </div>
+        <div class="form-item">
+          <label for="genre">Genre:</label>
+          <select id=genre>
+            <option value="Action">Action</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Sci-fi">Sci-fi</option>
+            <option value="Thriller">Thriller</option>
+          </select>
+        </div>
+        <input type="submit" value="Save">
+      </div>
+      <h1>Favorite Films</h1>
+      <ul id="film-list"></ul>
+      <button type="button">Delete!</button>
+    </form>
+  </body>
+</html>
