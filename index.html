@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <h1>Enter Favorite Film</h1>
+    <h1>Enter a Favorite Film</h1>
     <form class="form">
       <div class="form-wrapper">
         <div class="form-item">
@@ -31,11 +31,24 @@
             <option value="Thriller">Thriller</option>
           </select>
         </div>
-        <input type="submit" value="Save">
+        <div class="form-item">
+          <label for="releaseDate">Release Date:</label>
+          <input type="date" id="releaseDate">
+        </div>
+        <div class="form-item" id="rating">
+          <!-- <label for="rating">My Rating</label> -->
+          <p>My Rating:</p>
+          <input type="radio" name="rating" value="1 Star"> 1 Star
+          <input type="radio" name="rating" value="2 Star"> 2 Star
+          <input type="radio" name="rating" value="3 Star"> 3 Star
+          <input type="radio" name="rating" value="4 Star"> 4 Star
+          <input type="radio" name="rating" value="5 Star"> 5 Star
+        </div>
+        <input type="submit" value="Save" class="button">
       </div>
       <h1>Favorite Films</h1>
       <ul id="film-list"></ul>
-      <button type="button">Delete!</button>
+      <button type="button" id="delete-button" class="button">Delete All!</button>
     </form>
   </body>
 </html>
